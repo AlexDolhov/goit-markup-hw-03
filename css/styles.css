@@ -81,6 +81,14 @@ body {
 }
 
 /* Header section */
+.header {
+  border-bottom: 1px solid var(--header-border);
+}
+
+.header .logo {
+  padding: 24px 0;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -99,8 +107,6 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid var(--header-border);
 }
 
 .site-nav {
@@ -113,7 +119,6 @@ body {
 }
 
 .site-nav .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -237,6 +242,10 @@ body {
 
 /* Services section */
 
+.services {
+  padding-bottom: 94px;
+}
+
 .services .list {
   display: flex;
   justify-content: space-between;
@@ -282,9 +291,11 @@ body {
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team img {
+  margin-bottom: 30px;
+}
 
 .team .worker {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-color);
@@ -395,6 +406,8 @@ color: var(--accent-color);
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* Portfolio content */
+
 .portfolio-content {
   display: flex;
   flex-wrap: wrap;
@@ -406,12 +419,18 @@ color: var(--accent-color);
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
 
-  border: 1px solid var(--portfolio-cars-border);
+.item-info {
+  padding: 20px 24px;
+
+  border-left: 1px solid var(--portfolio-cars-border);
+  border-right: 1px solid var(--portfolio-cars-border);
+  border-bottom: 1px solid var(--portfolio-cars-border);
 }
 
 .portfolio-content .title {
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 
   color: var(--title-color);
   font-weight: 700;
@@ -420,7 +439,6 @@ color: var(--accent-color);
   letter-spacing: 0.06em;
 }
 .portfolio-content .text {
-  margin: 0 24px 20px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.86;
